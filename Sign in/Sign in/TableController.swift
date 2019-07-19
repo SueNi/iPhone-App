@@ -79,7 +79,7 @@ class tableController: UITableViewController {
         let edit = UITableViewRowAction(style: .default, title: "Edit", handler: { (action, indexPath) in
             let task = self.tasks[indexPath.row]})
         return [edit]
-    }*/
+    }
     override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let flagAction = self.contextualToggleFlagAction(forRowAtIndexPath: indexPath)
         let swipeConfig = UISwipeActionsConfiguration(actions: [ flagAction])
@@ -114,7 +114,7 @@ class tableController: UITableViewController {
         return true
     }
 
-
+*/
 
 // Override to support editing the table view.
 override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
